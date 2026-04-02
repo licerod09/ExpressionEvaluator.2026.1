@@ -5,10 +5,10 @@ namespace ExpressionEvaluator.UI.Win;
 
 partial class Form1
 {
-    // Designer variable, don't touch this
+    // Don't touch this, designer needs it
     private System.ComponentModel.IContainer components = null;
 
-    // Frees up resources when the form closes
+    // Cleans up when the form closes
     protected override void Dispose(bool disposing)
     {
         if (disposing && (components != null))
@@ -20,7 +20,6 @@ partial class Form1
 
     #region Windows Form Designer generated code
 
-    // Sets up all the controls on the form
     private void InitializeComponent()
     {
         txtDisplay = new TextBox();
@@ -47,7 +46,7 @@ partial class Form1
         btnResult = new Button();
         SuspendLayout();
 
-        // Green display where the expression shows up
+        // Green screen
         txtDisplay.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         txtDisplay.BackColor = Color.FromArgb(0, 64, 0);
         txtDisplay.ForeColor = Color.White;
@@ -56,7 +55,7 @@ partial class Form1
         txtDisplay.Size = new Size(382, 27);
         txtDisplay.TabIndex = 0;
 
-        // Row 1: 7, 8, 9, /, *, Delete
+        // Row 1
         btn7.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
         btn7.Location = new Point(38, 78);
         btn7.Name = "btn7";
@@ -104,7 +103,7 @@ partial class Form1
         btnMultiply.UseVisualStyleBackColor = false;
         btnMultiply.Click += btnMultiply_Click;
 
-        // Removes the last character typed
+        // Deletes last character
         btnDelete.BackColor = Color.FromArgb(192, 64, 0);
         btnDelete.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
         btnDelete.ForeColor = Color.Black;
@@ -116,7 +115,7 @@ partial class Form1
         btnDelete.UseVisualStyleBackColor = false;
         btnDelete.Click += btnDelete_Click;
 
-        // Row 2: 4, 5, 6, +, -, Clear
+        // Row 2
         btn4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
         btn4.Location = new Point(38, 133);
         btn4.Name = "btn4";
@@ -164,7 +163,7 @@ partial class Form1
         btnMinus.UseVisualStyleBackColor = false;
         btnMinus.Click += btnMinus_Click;
 
-        // Wipes the whole expression
+        // Clears everything
         btnClear.BackColor = Color.FromArgb(192, 64, 0);
         btnClear.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
         btnClear.Location = new Point(353, 133);
@@ -175,7 +174,7 @@ partial class Form1
         btnClear.UseVisualStyleBackColor = false;
         btnClear.Click += btnClear_Click;
 
-        // Row 3: 1, 2, 3, (, ), ^
+        // Row 3
         btn1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
         btn1.Location = new Point(38, 188);
         btn1.Name = "btn1";
@@ -223,7 +222,6 @@ partial class Form1
         btnCloseParenthesis.UseVisualStyleBackColor = false;
         btnCloseParenthesis.Click += btnCloseParenthesis_Click;
 
-        // Power operator
         btnPow.BackColor = Color.FromArgb(192, 64, 0);
         btnPow.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
         btnPow.Location = new Point(353, 188);
@@ -234,7 +232,7 @@ partial class Form1
         btnPow.UseVisualStyleBackColor = false;
         btnPow.Click += btnPow_Click;
 
-        // Row 4: 0, dot and = (= takes up the rest of the space)
+        // Row 4
         btn0.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
         btn0.Location = new Point(38, 243);
         btn0.Name = "btn0";
@@ -253,7 +251,7 @@ partial class Form1
         btnDot.UseVisualStyleBackColor = true;
         btnDot.Click += btnDot_Click;
 
-        // Evaluates the expression and shows the result
+        // Runs the evaluation
         btnResult.BackColor = Color.FromArgb(192, 64, 0);
         btnResult.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
         btnResult.Location = new Point(164, 243);
@@ -264,7 +262,6 @@ partial class Form1
         btnResult.UseVisualStyleBackColor = false;
         btnResult.Click += btnResult_Click;
 
-        // General form settings
         AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.Black;
