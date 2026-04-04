@@ -26,20 +26,20 @@ partial class Form1
         btn7 = new Button();
         btn8 = new Button();
         btn9 = new Button();
-        btnDivide = new Button();
-        btnMultiply = new Button();
+        btnOpenParenthesis = new Button();
+        btnCloseParenthesis = new Button();
         btnDelete = new Button();
         btn4 = new Button();
         btn5 = new Button();
         btn6 = new Button();
-        btnPlus = new Button();
-        btnMinus = new Button();
+        btnMultiply = new Button();
+        btnDivide = new Button();
         btnClear = new Button();
         btn1 = new Button();
         btn2 = new Button();
         btn3 = new Button();
-        btnOpenParenthesis = new Button();
-        btnCloseParenthesis = new Button();
+        btnPlus = new Button();
+        btnMinus = new Button();
         btnPow = new Button();
         btn0 = new Button();
         btnDot = new Button();
@@ -83,25 +83,25 @@ partial class Form1
         btn9.UseVisualStyleBackColor = true;
         btn9.Click += btn9_Click;
 
-        btnDivide.BackColor = Color.FromArgb(192, 64, 0);
-        btnDivide.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnDivide.Location = new Point(227, 78);
-        btnDivide.Name = "btnDivide";
-        btnDivide.Size = new Size(52, 49);
-        btnDivide.TabIndex = 4;
-        btnDivide.Text = "/";
-        btnDivide.UseVisualStyleBackColor = false;
-        btnDivide.Click += btnDivide_Click;
+        btnOpenParenthesis.BackColor = Color.FromArgb(192, 64, 0);
+        btnOpenParenthesis.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        btnOpenParenthesis.Location = new Point(227, 78);
+        btnOpenParenthesis.Name = "btnOpenParenthesis";
+        btnOpenParenthesis.Size = new Size(52, 44);
+        btnOpenParenthesis.TabIndex = 4;
+        btnOpenParenthesis.Text = "(";
+        btnOpenParenthesis.UseVisualStyleBackColor = false;
+        btnOpenParenthesis.Click += btnOpenParenthesis_Click;
 
-        btnMultiply.BackColor = Color.FromArgb(192, 64, 0);
-        btnMultiply.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnMultiply.Location = new Point(290, 78);
-        btnMultiply.Name = "btnMultiply";
-        btnMultiply.Size = new Size(52, 49);
-        btnMultiply.TabIndex = 5;
-        btnMultiply.Text = "*";
-        btnMultiply.UseVisualStyleBackColor = false;
-        btnMultiply.Click += btnMultiply_Click;
+        btnCloseParenthesis.BackColor = Color.FromArgb(192, 64, 0);
+        btnCloseParenthesis.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        btnCloseParenthesis.Location = new Point(290, 78);
+        btnCloseParenthesis.Name = "btnCloseParenthesis";
+        btnCloseParenthesis.Size = new Size(52, 44);
+        btnCloseParenthesis.TabIndex = 5;
+        btnCloseParenthesis.Text = ")";
+        btnCloseParenthesis.UseVisualStyleBackColor = false;
+        btnCloseParenthesis.Click += btnCloseParenthesis_Click;
 
         // Deletes last character
         btnDelete.BackColor = Color.FromArgb(192, 64, 0);
@@ -143,25 +143,25 @@ partial class Form1
         btn6.UseVisualStyleBackColor = true;
         btn6.Click += btn6_Click;
 
-        btnPlus.BackColor = Color.FromArgb(192, 64, 0);
-        btnPlus.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnPlus.Location = new Point(227, 133);
-        btnPlus.Name = "btnPlus";
-        btnPlus.Size = new Size(52, 49);
-        btnPlus.TabIndex = 10;
-        btnPlus.Text = "+";
-        btnPlus.UseVisualStyleBackColor = false;
-        btnPlus.Click += btnPlus_Click;
+        btnMultiply.BackColor = Color.FromArgb(192, 64, 0);
+        btnMultiply.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        btnMultiply.Location = new Point(227, 133);
+        btnMultiply.Name = "btnMultiply";
+        btnMultiply.Size = new Size(52, 49);
+        btnMultiply.TabIndex = 10;
+        btnMultiply.Text = "*";
+        btnMultiply.UseVisualStyleBackColor = false;
+        btnMultiply.Click += btnMultiply_Click;
 
-        btnMinus.BackColor = Color.FromArgb(192, 64, 0);
-        btnMinus.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnMinus.Location = new Point(290, 133);
-        btnMinus.Name = "btnMinus";
-        btnMinus.Size = new Size(52, 49);
-        btnMinus.TabIndex = 11;
-        btnMinus.Text = "-";
-        btnMinus.UseVisualStyleBackColor = false;
-        btnMinus.Click += btnMinus_Click;
+        btnDivide.BackColor = Color.FromArgb(192, 64, 0);
+        btnDivide.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        btnDivide.Location = new Point(290, 133);
+        btnDivide.Name = "btnDivide";
+        btnDivide.Size = new Size(52, 49);
+        btnDivide.TabIndex = 11;
+        btnDivide.Text = "/";
+        btnDivide.UseVisualStyleBackColor = false;
+        btnDivide.Click += btnDivide_Click;
 
         // Clears everything
         btnClear.BackColor = Color.FromArgb(192, 64, 0);
@@ -202,25 +202,25 @@ partial class Form1
         btn3.UseVisualStyleBackColor = true;
         btn3.Click += btn3_Click;
 
-        btnOpenParenthesis.BackColor = Color.FromArgb(192, 64, 0);
-        btnOpenParenthesis.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnOpenParenthesis.Location = new Point(227, 188);
-        btnOpenParenthesis.Name = "btnOpenParenthesis";
-        btnOpenParenthesis.Size = new Size(52, 49);
-        btnOpenParenthesis.TabIndex = 16;
-        btnOpenParenthesis.Text = "(";
-        btnOpenParenthesis.UseVisualStyleBackColor = false;
-        btnOpenParenthesis.Click += btnOpenParenthesis_Click;
+        btnPlus.BackColor = Color.FromArgb(192, 64, 0);
+        btnPlus.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        btnPlus.Location = new Point(227, 188);
+        btnPlus.Name = "btnPlus";
+        btnPlus.Size = new Size(52, 49);
+        btnPlus.TabIndex = 16;
+        btnPlus.Text = "+";
+        btnPlus.UseVisualStyleBackColor = false;
+        btnPlus.Click += btnPlus_Click;
 
-        btnCloseParenthesis.BackColor = Color.FromArgb(192, 64, 0);
-        btnCloseParenthesis.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnCloseParenthesis.Location = new Point(290, 188);
-        btnCloseParenthesis.Name = "btnCloseParenthesis";
-        btnCloseParenthesis.Size = new Size(52, 49);
-        btnCloseParenthesis.TabIndex = 17;
-        btnCloseParenthesis.Text = ")";
-        btnCloseParenthesis.UseVisualStyleBackColor = false;
-        btnCloseParenthesis.Click += btnCloseParenthesis_Click;
+        btnMinus.BackColor = Color.FromArgb(192, 64, 0);
+        btnMinus.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        btnMinus.Location = new Point(290, 188);
+        btnMinus.Name = "btnMinus";
+        btnMinus.Size = new Size(52, 49);
+        btnMinus.TabIndex = 17;
+        btnMinus.Text = "-";
+        btnMinus.UseVisualStyleBackColor = false;
+        btnMinus.Click += btnMinus_Click;
 
         btnPow.BackColor = Color.FromArgb(192, 64, 0);
         btnPow.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -268,11 +268,11 @@ partial class Form1
         ClientSize = new Size(450, 320);
         Controls.Add(txtDisplay);
         Controls.Add(btn7); Controls.Add(btn8); Controls.Add(btn9);
-        Controls.Add(btnDivide); Controls.Add(btnMultiply); Controls.Add(btnDelete);
+        Controls.Add(btnOpenParenthesis); Controls.Add(btnCloseParenthesis); Controls.Add(btnDelete);
         Controls.Add(btn4); Controls.Add(btn5); Controls.Add(btn6);
-        Controls.Add(btnPlus); Controls.Add(btnMinus); Controls.Add(btnClear);
+        Controls.Add(btnMultiply); Controls.Add(btnDivide); Controls.Add(btnClear);
         Controls.Add(btn1); Controls.Add(btn2); Controls.Add(btn3);
-        Controls.Add(btnOpenParenthesis); Controls.Add(btnCloseParenthesis); Controls.Add(btnPow);
+        Controls.Add(btnPlus); Controls.Add(btnMinus); Controls.Add(btnPow);
         Controls.Add(btn0); Controls.Add(btnDot); Controls.Add(btnResult);
         Name = "Form1";
         Text = "Functions Evaluator";
@@ -284,10 +284,10 @@ partial class Form1
 
     private TextBox txtDisplay;
     private Button btn7, btn8, btn9;
-    private Button btnDivide, btnMultiply, btnDelete;
+    private Button btnOpenParenthesis, btnCloseParenthesis, btnDelete;
     private Button btn4, btn5, btn6;
-    private Button btnPlus, btnMinus, btnClear;
+    private Button btnMultiply, btnDivide, btnClear;
     private Button btn1, btn2, btn3;
-    private Button btnOpenParenthesis, btnCloseParenthesis, btnPow;
+    private Button btnPlus, btnMinus, btnPow;
     private Button btn0, btnDot, btnResult;
 }
